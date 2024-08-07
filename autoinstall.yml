@@ -3,7 +3,7 @@ autoinstall:
   identity:
     hostname: SBA-TESTE
     username: sba
-    password: $y$j9T$yJa8y8hWFd4x5zPhfdhTL0$6Q4DX3Gwm48pl3YuSPQlcnl7DclACWgXo1FtNcz29z7
+    password: "$y$j9T$yJa8y8hWFd4x5zPhfdhTL0$6Q4DX3Gwm48pl3YuSPQlcnl7DclACWgXo1FtNcz29z7"
   storage:
     layout:
       name: lvm
