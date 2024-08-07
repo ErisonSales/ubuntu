@@ -1,0 +1,21 @@
+autoinstall:
+  version: 1
+  identity:
+    hostname: SBA-TESTE
+    username: sba
+    password: $y$j9T$yJa8y8hWFd4x5zPhfdhTL0$6Q4DX3Gwm48pl3YuSPQlcnl7DclACWgXo1FtNcz29z7
+  storage:
+    layout:
+      name: lvm
+  snaps:
+    - name: onlyoffice-desktopeditors
+    - classic: false
+    - name: outlook-electron
+    - classic: false
+  packages:
+    - nano
+  late-commands:
+    - curtin in-target -- apt update
+    - curtin in-target -- apt upgrade
+    - curtin in-target -- apt install openjdk-11-jre
+    - curtin in-target -- apt install iced-launcher
